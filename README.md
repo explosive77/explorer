@@ -1,8 +1,8 @@
-# ETCExplorer
+# MANExplorer
 
 <b>Live Version: [etherhub.io](http://etherhub.io)</b>
 
-Follow the project progress at: [ETC Block Explorer Development](https://github.com/ethereumproject/explorer)
+Follow the project progress at: [MAN Block Explorer Development](https://github.com/ethereumproject/explorer)
 
 ## Local installation
 
@@ -42,7 +42,7 @@ Basic settings:
     "patch":        true,
     "patchBlocks":  100,
     "settings": {
-        "symbol": "ETC",
+        "symbol": "MAN",
         "name": "Ethereum Classic",
         "title": "Ethereum Classic Block Explorer",
         "author": "Elaine"
@@ -55,7 +55,7 @@ Basic settings:
 
 ```gethPort```    Your node API RPC port.
 
-```startBlock```  This is the start block of the blockchain, should always be 0 if you want to sync the whole ETC blockchain.
+```startBlock```  This is the start block of the blockchain, should always be 0 if you want to sync the whole MAN blockchain.
 
 ```endBlock```    This is usually the 'latest'/'newest' block in the blockchain, this value gets updated automatically, and will be used to patch missing blocks if the whole app goes down.
 
