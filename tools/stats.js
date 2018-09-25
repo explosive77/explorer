@@ -3,13 +3,13 @@
 */
 
 var Web3 = require('web3');
-
+var fs = require('fs');
+var config = JSON.parse(fs.readFileSync('config.json')); 
 var mongoose = require( 'mongoose' );
 var BlockStat = require( '../db.js' ).BlockStat;
 
 var updateStats = function(range, interval, rescan) {
-    var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
-
+var web3 = new Web3(new Web3.providers.HttpProvider('http://'+config.nodeAddr+':'+config.gethPort));
     mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/blockDB');
     mongoose.set('debug', true);
 

@@ -6,7 +6,7 @@
                 <h2>About</h2>
                 <p> {{settings.about}} </p>
                 <span ng-bind-html="settings.poweredbyCustom" ng-if="settings.poweredbyCustom">{{settings.poweredbyCustom}}</span>
-                <span ng-if="!settings.poweredbyCustom && settings.poweredbyEtcImage"><a href="https://github.com/ethereumproject/explorer" target="_blank"><img height="51px" src="{{settings.poweredbyEtcImage}}"></a></span>
+                <span ng-if="!settings.poweredbyCustom && settings.poweredbyEtcImage"><a href="https://github.com/matrixainetwork" target="_blank"><img height="51px" src="{{settings.poweredbyEtcImage}}"></a></span>
                 <p ng-if="!settings.poweredbyCustom && !settings.poweredbyEtcImage && settings.poweredbyEtc"> Powered by <a href="https://github.com/ethereumproject/explorer" target="_blank">ETC Explorer</a> </p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
@@ -32,9 +32,8 @@
             <div ng-show="settings.symbol == 'ETC'" class="col-md-6 col-sm-12 col-xs-12 footer-block">
                 <h2>Help, it's Broken!</h2>
                 <address class="margin-bottom-40"> 
-                    <br>Open an Issue: <a href="https://github.com/ethereumproject/explorer/issues">github</a>
-                    <br> <a href="mailto:elaine.ou@gmail.com">Email bug reports</a>
-                    <br> <a href="https://twitter.com/eiaine">Twit</a>
+                    <br>Open an Issue: <a href="https://github.com/matrixainetwork">github</a>
+                    <br> <a href="mailto:admin@matrix.io">Email bug reports</a>
                 </address>
             </div>
         </div>
